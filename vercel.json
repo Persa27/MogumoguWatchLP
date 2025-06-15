@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd mogumogu_lp && npm run build",
+  "outputDirectory": "mogumogu_lp/build",
+  "installCommand": "cd mogumogu_lp && npm install",
+  "devCommand": "cd mogumogu_lp && npm start",
+  "framework": "create-react-app"
+} 
