@@ -64,3 +64,41 @@ code {
   left: 6px;
   transform: rotate(45deg);
 }
+
+/* モバイル最適化 */
+@media (max-width: 640px) {
+  /* タッチ操作の改善 */
+  button, a[href] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* スクロールの改善 */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* フォントサイズの調整 */
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* フォーカス状態の改善 */
+  input:focus, button:focus, a:focus {
+    outline: 2px solid #58C694;
+    outline-offset: 2px;
+  }
+}
+
+/* iOS Safari のズーム防止 */
+@supports (-webkit-touch-callout: none) {
+  input[type="email"], 
+  input[type="text"], 
+  input[type="tel"], 
+  input[type="password"], 
+  textarea, 
+  select {
+    font-size: 16px;
+  }
+}

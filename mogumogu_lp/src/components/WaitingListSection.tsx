@@ -56,13 +56,13 @@ const WaitingListSection: React.FC = () => {
   };
 
   return (
-    <section id="waiting-list" className="py-16 bg-primary/5 section-fade">
+    <section id="waiting-list" className="py-12 sm:py-16 bg-primary/5 section-fade">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-gray-900">
             リリース通知を受け取る
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">
             もぐもぐウォッチのリリース情報をいち早くお届けします。
           </p>
 
@@ -77,23 +77,23 @@ const WaitingListSection: React.FC = () => {
 
           {!isSubmitted ? (
             <>
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:gap-4 max-w-md mx-auto">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="メールアドレスを入力"
-                  className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  className="w-full px-4 py-3 sm:py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-base"
                   required
                   disabled={isLoading}
                 />
                 <button
                   type="submit"
                   disabled={isLoading || !email}
-                  className="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                  className="w-full px-6 py-3 sm:py-4 bg-primary text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-base sm:text-lg shadow-lg hover:shadow-xl"
                 >
                   {isLoading ? (
-                    <span className="flex items-center">
+                    <span className="flex items-center justify-center">
                       <i className="ri-loader-4-line animate-spin mr-2"></i>
                       登録中...
                     </span>
