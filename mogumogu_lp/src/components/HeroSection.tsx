@@ -28,8 +28,8 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 py-8 sm:py-16 md:py-24 relative">
         <div className="max-w-xl">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 leading-tight">
-            テレビに夢中でも、<br className="hidden sm:block" />
-            <span className="sm:hidden">　</span>"もぐもぐ"は止めない。
+            テレビに夢中でも、<br />
+            "もぐもぐ"は止めない。
           </h1>
           <h2 className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
             食事中の口の動きをAIで見守り、止まったらテレビもピタッ。<br className="hidden sm:block" />
